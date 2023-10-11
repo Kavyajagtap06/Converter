@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="converter">
+        <header>Currency Converter</header>
+        <div class="amount">
+             <p>Enter Amount</p>
+        </div>
+        <input type="number" id="amount" placeholder="Enter amount">
+        <div class="heads">
+            <p>From</p><p>To</p>
+        </div>
+        <div class="droplist">
+           
+        <select id="from">
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+            <option value="inr">INR</option>
+            <option value="jpy">JPY</option>
+            <option value="aud">AUD</option>
+            <option value="cad">CAD</option>
+            <option value="chf">CHF</option>
+            <option value="cny">CNY</option>
+            <option value="rub">RUB</option>
+        </select>
+        
+        <select id="to">
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+            <option value="inr">INR</option>
+            <option value="jpy">JPY</option>
+            <option value="aud">AUD</option>
+            <option value="cad">CAD</option>
+            <option value="chf">CHF</option>
+            <option value="cny">CNY</option>
+            <option value="rub">RUB</option>
+        </select>
+        </div>
+        <div class="buttons">
+        <button onclick="convertCurrency()">Convert</button>
+        <button onclick="resetConverter()">Reset</button></div>
+        <div class="result">
+        <h2>Result: <span id="result">0</span></h2>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
